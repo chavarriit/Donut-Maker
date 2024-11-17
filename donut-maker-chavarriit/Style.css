@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* General Styles */
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: #4e342e; /* Chocolate brown text color */
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(255, 248, 220, 0.9); /* Semi-transparent cream background */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header h1 {
+    color: #d2691e; /* Toasted orange color */
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: inline-flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4e342e;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d2691e;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff8dc;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+}
+
+.dropdown-menu li a {
+    color: #4e342e;
+    font-size: 1em;
+}
+
+.dropdown-menu li a:hover {
+    color: #d2691e;
+}
+
+/* Main Container */
+.container {
+    margin-top: 150px; /* Space for the fixed header */
+}
+
+/* Donut Counter */
+#info {
+    font-size: 2.5em;
+    color: #4e342e;
+    margin: 20px 0;
+}
+
+/* Donut Button */
+#donut-button {
+    background-color: #ffb74d; /* Light orange color */
+    border: none;
+    border-radius: 50%;
+    padding: 50px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#donut-button:hover {
+    background-color: #ffa726;
+    transform: scale(1.05);
+}
+
+/* Auto Clicker Section */
+#auto-clicker-info {
+    font-size: 1.5em;
+    color: #4e342e;
+    margin: 30px 0 10px;
+}
+
+#auto-clicker-button {
+    background-color: #a1887f; /* Light brown color */
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#auto-clicker-button:hover {
+    background-color: #8d6e63;
+    transform: scale(1.05);
+}
+
+#auto-clicker-button:disabled {
+    background-color: #d7ccc8;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Reset Button */
+#reset-button {
+    background-color: #e57373; /* Light red color */
+    border: none;
+    border-radius: 20px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s, transform 0.1s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#reset-button:hover {
+    background-color: #ef5350;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    margin-top: 60px;
+    color: #4e342e;
+    font-size: 1.5em;
+    padding: 20px 0;
+    background-color: rgba(255, 248, 220, 0.9);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    #donut-button {
+        padding: 30px;
+        font-size: 1.2em;
+    }
+
+    #auto-clicker-button, #reset-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
